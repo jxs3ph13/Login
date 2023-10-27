@@ -1,5 +1,7 @@
             import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
-            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js";
+
+            import { getAuth } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"
+
             const firebaseConfig = {
             apiKey: "AIzaSyDViN-jHs4j7HoPa9N688P4wzSQEjllX2o",
             authDomain: "proyec-login.firebaseapp.com",
@@ -12,4 +14,4 @@
         
             // Initialize Firebase
             export const app = initializeApp(firebaseConfig);
-            const analytics = getAnalytics(app);
+            export const auth = getAuth(app)
